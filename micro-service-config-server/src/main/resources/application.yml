@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: micro-service-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/soso_isoft/FoodsCredit.git
+          search-paths: config-repo
+          username: 18613045210
+          password: aa123123
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false
+
